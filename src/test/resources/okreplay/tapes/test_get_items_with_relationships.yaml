@@ -1,0 +1,25 @@
+!tape
+name: test get items with relationships
+interactions:
+- recorded: 2020-01-22T06:43:59.217Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording/a9a05198-cbb8-4794-b75a-4781485887c0?fmt=json&inc=releases
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json; charset=utf-8
+      date: Wed, 22 Jan 2020 06:43:59 GMT
+      etag: W/"776223e9bebf1d83650c1b61cffef9ee"
+      server: Plack::Handler::Starlet
+      vary: Accept-Encoding
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '1120'
+      x-ratelimit-reset: '1579675440'
+    body: '{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","releases":[{"packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","barcode":"888072048003","quality":"normal","disambiguation":"","text-representation":{"language":"eng","script":"Latn"},"release-events":[{"date":"2018-03-23","area":{"iso-3166-1-codes":["US"],"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United
+      States","sort-name":"United States","disambiguation":""}}],"packaging":"Digipak","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","title":"Used Future","id":"3aeb2e72-347a-42f2-b474-deded1dedfa1","date":"2018-03-23","status":"Official","country":"US"},{"disambiguation":"","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","barcode":null,"quality":"normal","text-representation":{"script":"Latn","language":"eng"},"release-events":[{"date":"2018-03-23","area":{"disambiguation":"","sort-name":"France","name":"France","iso-3166-1-codes":["FR"],"id":"08310658-51eb-3801-80de-5a0739207115"}}],"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging":"None","title":"Used
+      Future","country":"FR","date":"2018-03-23","id":"14346b7b-d20a-4266-b430-16b73f6afc8d","status":"Official"},{"date":"2018","id":"fcf7c7f5-f6d3-4800-b481-7a4ea220ef5f","status":"Official","country":"XE","status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging":"Jewel
+      Case","title":"Used Future","text-representation":{"language":"eng","script":"Latn"},"release-events":[{"date":"2018","area":{"disambiguation":"","sort-name":"Europe","name":"Europe","id":"89a675c2-3e37-3518-b83c-418bad59a85a","iso-3166-1-codes":["XE"]}}],"packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","quality":"normal","barcode":"888072048003","disambiguation":""}],"length":262000,"video":false,"title":"Used
+      Future","disambiguation":""}'

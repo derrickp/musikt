@@ -1,0 +1,21 @@
+!tape
+name: test get items by id
+interactions:
+- recorded: 2020-01-22T06:08:08.769Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording/a9a05198-cbb8-4794-b75a-4781485887c0?fmt=json
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-length: '117'
+      content-type: application/json; charset=utf-8
+      date: Wed, 22 Jan 2020 06:08:07 GMT
+      etag: '"4b7a5238818c6e7a4ead50b0b918e2d5"'
+      server: Plack::Handler::Starlet
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '1153'
+      x-ratelimit-reset: '1579673289'
+    body: '{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","disambiguation":"","video":false,"title":"Used Future","length":262000}'
