@@ -15,23 +15,42 @@ class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     @Test
     @OkReplay
     fun testGetItemsById() {
-        val repo = MusicbrainzEntityRepository(Recording::class.java, request)
-        val recording = repo.getItemById(
-            "recording",
-            IdOptions("a9a05198-cbb8-4794-b75a-4781485887c0", emptyList()))
+        val repo = RecordingRepository(request)
+        val recording = repo.getById(
+            IdOptions("a9a05198-cbb8-4794-b75a-4781485887c0", emptyList())
+        )
         assertEquals("a9a05198-cbb8-4794-b75a-4781485887c0", recording?.id)
     }
 
     @Test
     @OkReplay
     fun testGetItemsWithRelationships() {
-        val repo = MusicbrainzEntityRepository(Recording::class.java, request)
+        val repo = RecordingRepository(request)
         val options = IdOptions(
             id = "a9a05198-cbb8-4794-b75a-4781485887c0",
             relationships = listOf("releases")
         )
-        val recording = repo.getItemById("recording", options)
+        val recording = repo.getById(options)
         assertEquals("a9a05198-cbb8-4794-b75a-4781485887c0", recording?.id)
         assertEquals(3, recording?.releases?.size)
+    }
+
+    @Test
+    @OkReplay
+    fun testGetByTerm() {
+        val repo = RecordingRepository(request)
+        val term = "The Sword"
+        val recordings = repo.getByTerm(term)
+        assertEquals(25, recordings.size)
+    }
+
+    @Test
+    @OkReplay
+    fun testGetByQuery() {
+        val repo = RecordingRepository(request)
+        val query = RecordingQuery(artist = "\"The Sword\"", title = "Used Future")
+        val recordings = repo.getByQuery(query)
+        assertEquals(13, recordings.size)
+        assertEquals(100, recordings[0].score)
     }
 }
