@@ -4,9 +4,14 @@ import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.entities.Recording
 import dev.plotsky.musikt.entities.RecordingList
 
-class RecordingRepository(private val request: Request): Repository<Recording> {
+class RecordingRepository(
+    private val request: Request
+) : Repository<Recording> {
     private val idSearch = MusicbrainzIdSearch(Recording::class.java, request)
-    private val listSearch = MusicbrainzListSearch(RecordingList::class.java, request)
+    private val listSearch = MusicbrainzListSearch(
+        RecordingList::class.java,
+        request
+    )
 
     private val endpoint = "recording"
 

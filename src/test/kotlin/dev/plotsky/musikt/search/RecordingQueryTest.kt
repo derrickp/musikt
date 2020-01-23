@@ -1,7 +1,7 @@
 package dev.plotsky.musikt.search
 
-import org.junit.Test
 import kotlin.test.assertEquals
+import org.junit.Test
 
 class RecordingQueryTest {
     @Test

@@ -3,7 +3,6 @@ package dev.plotsky.musikt.search
 import dev.plotsky.musikt.ReplayTest
 import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.buildDefaultConfiguration
-import dev.plotsky.musikt.entities.Recording
 import kotlin.test.assertEquals
 import okreplay.OkReplay
 import okreplay.TapeMode
@@ -48,7 +47,10 @@ class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     @OkReplay
     fun testGetByQuery() {
         val repo = RecordingRepository(request)
-        val query = RecordingQuery(artist = "\"The Sword\"", title = "Used Future")
+        val query = RecordingQuery(
+            artist = "\"The Sword\"",
+            title = "Used Future"
+        )
         val recordings = repo.getByQuery(query)
         assertEquals(13, recordings.size)
         assertEquals(100, recordings[0].score)
