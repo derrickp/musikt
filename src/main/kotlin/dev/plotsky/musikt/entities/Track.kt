@@ -4,5 +4,5 @@ data class Track(
     val id: String,
     val number: String,
     val title: String,
-    val length: Int
+    val length: Int?
 )

@@ -6,5 +6,5 @@ data class ArtistReference(
     val id: String,
     val name: String,
     @Json(name = "sort-name") val sortName: String,
-    val disambiguation: String
+    val disambiguation: String?
 )
