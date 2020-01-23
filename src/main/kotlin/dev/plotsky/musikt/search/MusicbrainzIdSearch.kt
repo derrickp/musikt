@@ -4,10 +4,10 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dev.plotsky.musikt.Request
 
-class MusicbrainzEntityRepository<T>(
+class MusicbrainzIdSearch<T>(
     private val klass: Class<T>,
     private val request: Request
-) : EntityRepository<T> {
+) : IdSearch<T> {
     private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
 
     override fun getItemById(

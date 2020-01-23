@@ -1,6 +1,6 @@
 package dev.plotsky.musikt.search
 
-interface EntityRepository<T> {
+interface IdSearch<T> {
     fun getItemById(
         endpoint: String,
         idOptions: IdOptions
