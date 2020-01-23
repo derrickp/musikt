@@ -16,6 +16,6 @@ class RequestTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
         val config = buildDefaultConfiguration()
         val request = Request(config, client)
         val response = request.get(endpoint, parameters)
-        assertEquals(200, response?.code)
+        assertEquals(200, response.code)
     }
 }
