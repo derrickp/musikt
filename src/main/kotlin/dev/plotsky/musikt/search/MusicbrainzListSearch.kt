@@ -4,6 +4,8 @@ import com.squareup.moshi.JsonDataException
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dev.plotsky.musikt.Request
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 
 class MusicbrainzListSearch<T>(
     private val klass: Class<T>,
@@ -12,12 +14,14 @@ class MusicbrainzListSearch<T>(
     private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
 
     override fun byTerm(endpoint: String, term: String): T? {
-        val parameters = termParameters(term)
+        val parameters = termParameters(
+            URLEncoder.encode(term, StandardCharsets.UTF_8)
+        )
         return get(endpoint, parameters)
     }
 
     override fun byQuery(endpoint: String, query: Query): T? {
-        val parameters = queryParameters(query.getQuery())
+        val parameters = queryParameters(query.getEncodedQuery())
         return get(endpoint, parameters)
     }
 
@@ -38,7 +42,7 @@ class MusicbrainzListSearch<T>(
         return try {
             val adapter = moshi.adapter(klass)
             adapter.fromJson(json)
-        } catch(e: JsonDataException) {
+        } catch (e: JsonDataException) {
             null
         }
     }

@@ -9,7 +9,7 @@ class RequestTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     @Test @OkReplay
     fun testGetMethod() {
         val parameters = mapOf(
-            "query" to "artist:\"The Sword\" AND title:Used Future",
+            "query" to "artist:\"The+Sword\"+AND+title:Used+Future",
             "fmt" to "json"
         )
         val endpoint = "recording"

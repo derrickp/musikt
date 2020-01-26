@@ -1,7 +1,5 @@
 package dev.plotsky.musikt
 
-import java.net.URLEncoder
-import java.nio.charset.StandardCharsets
 import okhttp3.OkHttpClient
 import okhttp3.Request as OkHttpRequest
 import okhttp3.Response
@@ -10,11 +8,14 @@ class Request(
     private val config: Configuration,
     private val client: OkHttpClient
 ) {
-    fun get(endpoint: String, parameters: Map<String, String>): Response {
-        val encodedParams: String = parameters.entries.joinToString("&") {
-            "${it.key}=${URLEncoder.encode(it.value, StandardCharsets.UTF_8)}"
+    fun get(
+        endpoint: String,
+        encodedParameters: Map<String, String>
+    ): Response {
+        val urlQuery: String = encodedParameters.entries.joinToString("&") {
+            "${it.key}=${it.value}"
         }
-        val url = "${config.baseUrl}/$endpoint?$encodedParams"
+        val url = "${config.baseUrl}/$endpoint?$urlQuery"
         val request = OkHttpRequest.Builder().url(url).build()
         return client.newCall(request).execute()
     }

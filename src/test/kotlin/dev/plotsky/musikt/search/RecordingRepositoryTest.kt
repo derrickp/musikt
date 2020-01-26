@@ -55,4 +55,17 @@ class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
         assertEquals(13, recordings.size)
         assertEquals(100, recordings[0].score)
     }
+
+    @Test
+    @OkReplay
+    fun testGetByQueryWithReplacements() {
+        val repo = RecordingRepository(request)
+
+        val query = RecordingQuery(
+            artist = "\"Zeal & Ardor\"",
+            title = "Gravedigger's Chant"
+        )
+        val recordings = repo.getByQuery(query)
+        assertEquals(2, recordings.size)
+    }
 }

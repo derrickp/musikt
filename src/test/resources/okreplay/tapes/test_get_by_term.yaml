@@ -1,7 +1,7 @@
 !tape
 name: test get by term
 interactions:
-- recorded: 2020-01-23T04:57:53.747Z
+- recorded: 2020-01-26T23:01:52.442Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=The+Sword
@@ -9,16 +9,19 @@ interactions:
     status: 200
     headers:
       access-control-allow-origin: '*'
+      cache-control: no-cache, no-store
       content-type: application/json
-      date: Thu, 23 Jan 2020 04:57:53 GMT
-      etag: '"MWNhYzgyMDAwMDAwMDAwMFNvbHI="'
-      last-modified: Thu, 23 Jan 2020 04:55:17 GMT
+      date: Sun, 26 Jan 2020 23:01:52 GMT
+      etag: '"16fe41707e8"'
+      expires: Sat, 01 Jan 2000 01:00:00 GMT
+      last-modified: Sun, 26 Jan 2020 23:01:52 GMT
+      pragma: no-cache
       vary: Accept-Encoding
       x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '872'
-      x-ratelimit-reset: '1579755471'
-    body: '{"created":"2020-01-23T04:57:53.417Z","count":6736440,"offset":0,"recordings":[{"id":"644a0261-7108-46d1-a130-38a178200e21","score":100,"title":"The Sword","video":null,"artist-credit":[{"name":"Abortived Gasp","artist":{"id":"6bf6c10c-968c-4dcd-adda-ae58b5a34af4","name":"Abortived
+      x-ratelimit-remaining: '825'
+      x-ratelimit-reset: '1580079709'
+    body: '{"created":"2020-01-26T23:01:52.284Z","count":5263445,"offset":0,"recordings":[{"id":"644a0261-7108-46d1-a130-38a178200e21","score":100,"title":"The Sword","video":null,"artist-credit":[{"name":"Abortived Gasp","artist":{"id":"6bf6c10c-968c-4dcd-adda-ae58b5a34af4","name":"Abortived
       Gasp","sort-name":"Abortived Gasp"}}],"releases":[{"id":"57456db1-4d83-4527-b42d-6603ca85e45d","count":1,"title":"A Fridge Fulla Bribes","status":"Official","release-group":{"id":"7eca9edf-f61a-404e-8b3c-53f4fd32f8d3","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"A
       Fridge Fulla Bribes","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"1989","country":"US","release-events":[{"date":"1989","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":15,"media":[{"position":1,"format":"Cassette","track":[{"id":"f9098f28-7c4a-4f71-a2b3-d49041050415","number":"B8","title":"The
       Sword"}],"track-count":15,"track-offset":14}]}]},{"id":"8e0109b8-cf8d-4d3e-9396-fcf85b35f568","score":100,"title":"The Sword","length":293000,"video":null,"artist-credit":[{"name":"Profugus Mortis","artist":{"id":"5827348a-c289-4eb1-851d-04bb9bd6b4eb","name":"Profugus
