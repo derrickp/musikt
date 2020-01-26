@@ -40,6 +40,8 @@ repositories {
 }
 
 dependencies {
+    api("com.squareup.okhttp3:okhttp:4.3.1")
+
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
@@ -47,7 +49,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.squareup.moshi:moshi:1.9.2")
     implementation("com.squareup.moshi:moshi-kotlin:1.9.2")
-    implementation("com.squareup.okhttp3:okhttp:4.3.1")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
