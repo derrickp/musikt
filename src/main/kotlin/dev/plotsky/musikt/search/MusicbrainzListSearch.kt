@@ -1,5 +1,6 @@
 package dev.plotsky.musikt.search
 
+import com.squareup.moshi.JsonDataException
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dev.plotsky.musikt.Request
@@ -34,8 +35,12 @@ class MusicbrainzListSearch<T>(
     }
 
     private fun buildClass(json: String): T? {
-        val adapter = moshi.adapter(klass)
-        return adapter.fromJson(json)
+        return try {
+            val adapter = moshi.adapter(klass)
+            adapter.fromJson(json)
+        } catch(e: JsonDataException) {
+            null
+        }
     }
 
     private fun queryParameters(query: String): Map<String, String> {
