@@ -8,7 +8,7 @@ import okreplay.OkReplay
 import okreplay.TapeMode
 import org.junit.Test
 
-class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
+class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY) {
     private val request = Request(buildDefaultConfiguration(), client)
 
     @Test
@@ -67,5 +67,17 @@ class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
         )
         val recordings = repo.getByQuery(query)
         assertEquals(2, recordings.size)
+    }
+
+    @Test
+    @OkReplay
+    fun testGetByQueryWithArtistName() {
+        val query = RecordingQuery(
+            artistname = "\"Uncle Acid & The Deadbeats\"",
+            title = "Slow Death"
+        )
+        val repo = RecordingRepository(request)
+        val recordings = repo.getByQuery(query)
+        assertEquals(4, recordings.size)
     }
 }
