@@ -37,5 +37,6 @@ class RecordingQuery(
             .replace("'s", "")
             .replace("'t", "")
             .replace("'re", "")
+            .replace("'d", "")
     }
 }
