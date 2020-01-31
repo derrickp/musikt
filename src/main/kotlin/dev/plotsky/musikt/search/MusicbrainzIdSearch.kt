@@ -6,16 +6,30 @@ import dev.plotsky.musikt.Request
 
 class MusicbrainzIdSearch<T>(
     private val klass: Class<T>,
-    private val request: Request
+    private val request: Request,
+    private val adapters: List<Any> = emptyList()
 ) : IdSearch<T> {
-    private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+    private val moshi: Moshi? = null
+
+    private fun getMoshi(): Moshi {
+        return moshi ?: buildMoshi()
+    }
+
+    private fun buildMoshi(): Moshi {
+        val builder = Moshi.Builder()
+        for (adapter in adapters) {
+            builder.add(adapter)
+        }
+        builder.add(KotlinJsonAdapterFactory())
+        return builder.build()
+    }
 
     override fun getItemById(
         endpoint: String,
         idOptions: IdOptions
     ): T? {
         val json = get(endpoint, idOptions)
-        val adapter = moshi.adapter(klass)
+        val adapter = getMoshi().adapter(klass)
         return if (json != null) adapter.fromJson(json) else null
     }
 
