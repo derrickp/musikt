@@ -1,4 +1,4 @@
-package dev.plotsky.musikt.entities
+package dev.plotsky.musikt.entities.releases
 
 import com.squareup.moshi.Json
 
@@ -6,7 +6,7 @@ data class ReleaseReference(
     val id: String,
     val count: Int?,
     val title: String,
-    val status: String = "",
+    val status: String?,
     @Json(name = "release-group") val releaseGroup: ReleaseGroup?,
     val date: String?,
     val country: String?,

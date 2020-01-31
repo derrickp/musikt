@@ -1,6 +1,7 @@
 package dev.plotsky.musikt.entities.recordings
 
 import com.squareup.moshi.Json
+import dev.plotsky.musikt.entities.releases.ReleaseReference
 
 data class Recording(
     val id: String,
