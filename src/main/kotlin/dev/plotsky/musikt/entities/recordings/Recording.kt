@@ -1,4 +1,4 @@
-package dev.plotsky.musikt.entities
+package dev.plotsky.musikt.entities.recordings
 
 import com.squareup.moshi.Json
 
