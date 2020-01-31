@@ -102,3 +102,27 @@ interactions:
       Media","track":[{"id":"ac84fc9e-3f03-450b-abf7-2e1dc1481406","number":"3","title":"Twilight Sunrise","length":187616}],"track-count":13,"track-offset":2}]},{"id":"3aeb2e72-347a-42f2-b474-deded1dedfa1","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
       Future","primary-type":"Album"},"date":"2018-03-23","country":"US","release-events":[{"date":"2018-03-23","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"d48af839-3e56-42c9-bd2e-d8d27645c6d4","number":"3","title":"Twilight
       Sunrise","length":188000}],"track-count":13,"track-offset":2}]}]}]}'
+- recorded: 2020-01-29T03:38:06.043Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=artist:%22Slipknot%22
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Wed, 29 Jan 2020 03:38:05 GMT
+      etag: '"NjYxYWQ4MDAwMDAwMDAwMFNvbHI="'
+      last-modified: Wed, 29 Jan 2020 03:37:47 GMT
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '835'
+      x-ratelimit-reset: '1580269086'
+    body: '{"created":"2020-01-29T03:38:05.936Z","count":4,"offset":0,"artists":[{"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"US
+      metal band","isnis":["0000000115481722"],"life-span":{"begin":"1995","ended":null},"tags":[{"count":2,"name":"heavy metal"},{"count":1,"name":"metal"},{"count":4,"name":"nu metal"},{"count":-1,"name":"new metal"},{"count":3,"name":"alternative metal"},{"count":-1,"name":"rap
+      metal"},{"count":2,"name":"groove metal"},{"count":0,"name":"rock and indie"}]},{"id":"ceb7b6be-1dbb-4d80-b157-5588bc884764","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":80,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      States","sort-name":"United States","life-span":{"ended":null}},"disambiguation":"Late-80''s punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"connecticut"},{"count":1,"name":"usa"},{"count":1,"name":"punk"},{"count":1,"name":"new haven"}]},{"id":"5cd5cabf-1c2c-46cf-b8e6-83c7abb037c0","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":63,"name":"Slipknot
+      Tribute Band","sort-name":"Slipknot Tribute Band","life-span":{"ended":null}},{"id":"1a7a3506-7f87-48e7-82d1-5f6e001587fb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":62,"name":"Slipknot杉並","sort-name":"Slipknot Suginami","country":"JP","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Japan","sort-name":"Japan","life-span":{"ended":null}},"disambiguation":"Slipknot
+      Tribute Band","life-span":{"begin":"2016","ended":null},"aliases":[{"sort-name":"Slipknot Suginami","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Slipknot Suginami","locale":"en","type":"Artist name","primary":true,"begin-date":null,"end-date":null}]}]}'

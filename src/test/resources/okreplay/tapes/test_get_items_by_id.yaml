@@ -19,3 +19,22 @@ interactions:
       x-ratelimit-remaining: '794'
       x-ratelimit-reset: '1580079701'
     body: '{"title":"Used Future","id":"a9a05198-cbb8-4794-b75a-4781485887c0","video":false,"length":262000,"disambiguation":""}'
+- recorded: 2020-01-29T03:38:00.174Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?fmt=json
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json; charset=utf-8
+      date: Wed, 29 Jan 2020 03:38:00 GMT
+      etag: W/"ae22d2b577b0aeda0c79a2a3f5b87583"
+      server: Plack::Handler::Starlet
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '839'
+      x-ratelimit-reset: '1580269080'
+    body: '{"isnis":["0000000115481722"],"area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","iso-3166-1-codes":["US"],"sort-name":"United States","disambiguation":""},"gender-id":null,"gender":null,"begin_area":{"name":"Des Moines","id":"2bda1647-f64b-4277-acce-e9c1296d065e","sort-name":"Des
+      Moines","disambiguation":""},"disambiguation":"US metal band","country":"US","end_area":null,"type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","name":"Slipknot","life-span":{"end":null,"ended":false,"begin":"1995"},"sort-name":"Slipknot","ipis":[],"type":"Group"}'

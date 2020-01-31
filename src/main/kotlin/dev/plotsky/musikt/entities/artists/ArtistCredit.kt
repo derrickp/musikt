@@ -1,3 +1,3 @@
-package dev.plotsky.musikt.entities
+package dev.plotsky.musikt.entities.artists
 
 data class ArtistCredit(val name: String, val artist: ArtistReference)

@@ -1,4 +1,4 @@
-package dev.plotsky.musikt.entities
+package dev.plotsky.musikt.entities.artists
 
 import com.squareup.moshi.Json
 
