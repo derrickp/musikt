@@ -8,7 +8,7 @@ import okreplay.OkReplay
 import okreplay.TapeMode
 import org.junit.Test
 
-class ArtistRepositoryTest : ReplayTest(TapeMode.READ_WRITE) {
+class ArtistRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     private val request = Request(buildDefaultConfiguration(), client)
 
     @Test
