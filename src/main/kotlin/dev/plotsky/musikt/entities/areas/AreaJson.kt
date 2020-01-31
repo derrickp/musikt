@@ -13,5 +13,6 @@ data class AreaJson(
     @Json(name = "type-id")
     val typeId: String = "",
     @Json(name = "life-span")
-    val lifeSpan: LifeSpan?
+    val lifeSpan: LifeSpan?,
+    val score: Int?
 )

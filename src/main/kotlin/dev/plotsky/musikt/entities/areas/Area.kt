@@ -7,6 +7,7 @@ data class Area(
     val id: String,
     val relatedAreas: List<RelatedArea> = emptyList(),
     val disambiguation: String = "",
+    val score: Int?,
     @Json(name = "sort-name")
     val sortName: String = "",
     val name: String,

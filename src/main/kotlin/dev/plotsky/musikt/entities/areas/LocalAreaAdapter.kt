@@ -28,7 +28,8 @@ class LocalAreaAdapter {
             sortName = area.sortName,
             disambiguation = area.disambiguation,
             lifeSpan = area.lifeSpan,
-            relations = areaRelations
+            relations = areaRelations,
+            score = area.score
         )
     }
 
@@ -44,7 +45,8 @@ class LocalAreaAdapter {
             sortName = areaJson.sortName,
             typeId = areaJson.typeId,
             lifeSpan = areaJson.lifeSpan,
-            relatedAreas = relatedAreas
+            relatedAreas = relatedAreas,
+            score = areaJson.score
         )
     }
 
