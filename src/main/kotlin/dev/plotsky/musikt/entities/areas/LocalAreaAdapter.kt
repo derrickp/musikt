@@ -1,15 +1,14 @@
 package dev.plotsky.musikt.entities.areas
 
-import com.squareup.moshi.Moshi
 import com.squareup.moshi.FromJson
-import com.squareup.moshi.JsonReader
+import com.squareup.moshi.Moshi
 import com.squareup.moshi.ToJson
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
 class LocalAreaAdapter {
     @ToJson
     fun toJson(area: Area): AreaJson {
-        val areaRelations: List<Map<String, Any>> =  area.relatedAreas.map {
+        val areaRelations: List<Map<String, Any>> = area.relatedAreas.map {
             mapOf(
                 "type" to it.type,
                 "target-type" to it.targetType,

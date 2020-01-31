@@ -1,8 +1,8 @@
 package dev.plotsky.musikt.entities.recordings
 
 import com.squareup.moshi.Json
-import dev.plotsky.musikt.entities.releases.ReleaseReference
 import dev.plotsky.musikt.entities.artists.ArtistCredit
+import dev.plotsky.musikt.entities.releases.ReleaseReference
 
 data class Recording(
     val id: String,

@@ -5,9 +5,9 @@ import java.nio.charset.StandardCharsets
 
 class ArtistQuery(
     val artist: String? = null
-): Query {
+) : Query {
     override fun getQuery(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented")
     }
 
     override fun getEncodedQuery(): String {

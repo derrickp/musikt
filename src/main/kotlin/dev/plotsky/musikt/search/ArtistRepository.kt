@@ -4,7 +4,7 @@ import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.entities.artists.Artist
 import dev.plotsky.musikt.entities.artists.ArtistList
 
-class ArtistRepository(request: Request): Repository<Artist> {
+class ArtistRepository(request: Request) : Repository<Artist> {
     private val idSearch = MusicbrainzIdSearch(Artist::class.java, request)
     private val listSearch = MusicbrainzListSearch(
         ArtistList::class.java,

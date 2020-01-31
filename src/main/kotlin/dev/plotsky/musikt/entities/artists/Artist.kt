@@ -2,9 +2,9 @@ package dev.plotsky.musikt.entities.artists
 
 import com.squareup.moshi.Json
 import dev.plotsky.musikt.entities.LifeSpan
+import dev.plotsky.musikt.entities.areas.AreaReference
 import dev.plotsky.musikt.entities.recordings.RecordingReference
 import dev.plotsky.musikt.entities.releases.ReleaseReference
-import dev.plotsky.musikt.entities.areas.AreaReference
 
 data class Artist(
     val id: String,
