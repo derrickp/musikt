@@ -1,0 +1,31 @@
+{
+  "disambiguation": "",
+  "type": "City",
+  "relations": [
+    {
+      "attributes": [],
+      "target-credit": "",
+      "end": null,
+      "attribute-values": {},
+      "area": {
+        "disambiguation": "",
+        "sort-name": "Polk County",
+        "name": "Polk County",
+        "id": "514f0cc9-91e7-4025-b522-f3511c84030d"
+      },
+      "begin": null,
+      "target-type": "area",
+      "type": "part of",
+      "source-credit": "",
+      "attribute-ids": {},
+      "type-id": "de7cc874-8b1b-3a05-8272-f3834c968fb7",
+      "ended": false,
+      "direction": "backward"
+    }
+  ],
+  "sort-name": "Des Moines",
+  "life-span": { "begin": null, "ended": false, "end": null },
+  "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+  "name": "Des Moines",
+  "id": "2bda1647-f64b-4277-acce-e9c1296d065e"
+}
