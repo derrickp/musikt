@@ -1,7 +1,7 @@
 !tape
 name: test get method
 interactions:
-- recorded: 2020-01-26T23:01:54.456Z
+- recorded: 2020-01-31T05:47:18.879Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/recording?query=artist:%22The+Sword%22+AND+title:Used+Future&fmt=json
@@ -10,15 +10,15 @@ interactions:
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Sun, 26 Jan 2020 23:01:54 GMT
-      etag: '"ODg3OTgyMDAwMDAwMDAwMFNvbHI="'
-      last-modified: Sun, 26 Jan 2020 22:58:36 GMT
+      date: Fri, 31 Jan 2020 05:47:18 GMT
+      etag: '"ZjU3ZDgyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Fri, 31 Jan 2020 05:44:41 GMT
       vary: Accept-Encoding
-      x-cache-status: STALE
+      x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '986'
-      x-ratelimit-reset: '1580079715'
-    body: '{"created":"2020-01-26T23:01:47.100Z","count":13,"offset":0,"recordings":[{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","score":100,"title":"Used Future","length":262000,"video":null,"artist-credit":[{"name":"The Sword","artist":{"id":"40dc452a-6b63-4b7e-a106-062739155866","name":"The
+      x-ratelimit-remaining: '795'
+      x-ratelimit-reset: '1580449638'
+    body: '{"created":"2020-01-31T05:47:18.709Z","count":13,"offset":0,"recordings":[{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","score":100,"title":"Used Future","length":262000,"video":null,"artist-credit":[{"name":"The Sword","artist":{"id":"40dc452a-6b63-4b7e-a106-062739155866","name":"The
       Sword","sort-name":"Sword, The","disambiguation":"US metal band"}}],"releases":[{"id":"fcf7c7f5-f6d3-4800-b481-7a4ea220ef5f","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
       Future","primary-type":"Album"},"date":"2018","country":"XE","release-events":[{"date":"2018","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"d2841a5e-9eb0-4d6b-8186-1bac583b3408","number":"9","title":"Used
       Future","length":262000}],"track-count":13,"track-offset":8}]},{"id":"14346b7b-d20a-4266-b430-16b73f6afc8d","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used

@@ -1,7 +1,7 @@
 !tape
 name: test get by query with artist name
 interactions:
-- recorded: 2020-01-26T23:32:59.318Z
+- recorded: 2020-01-31T05:25:51.205Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=title:Slow+Death+AND+artistname:%22Uncle+Acid+and+The+Deadbeats%22
@@ -10,15 +10,15 @@ interactions:
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Sun, 26 Jan 2020 23:32:59 GMT
-      etag: '"YjI4ODIwMDAwMDAwMDAwU29scg=="'
-      last-modified: Sun, 26 Jan 2020 23:28:40 GMT
+      date: Fri, 31 Jan 2020 05:25:51 GMT
+      etag: '"OWU3ZDgyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Fri, 31 Jan 2020 05:22:04 GMT
       vary: Accept-Encoding
       x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '823'
-      x-ratelimit-reset: '1580081579'
-    body: '{"created":"2020-01-26T23:32:59.127Z","count":4,"offset":0,"recordings":[{"id":"82e86e38-70df-4915-a4b1-803e4c175f14","score":100,"title":"Slow Death","length":559653,"video":null,"artist-credit":[{"name":"Uncle Acid","artist":{"id":"e5edd3b8-2a81-42c4-93a4-c19a10713295","name":"Uncle
+      x-ratelimit-remaining: '973'
+      x-ratelimit-reset: '1580448351'
+    body: '{"created":"2020-01-31T05:25:51.118Z","count":4,"offset":0,"recordings":[{"id":"82e86e38-70df-4915-a4b1-803e4c175f14","score":100,"title":"Slow Death","length":559653,"video":null,"artist-credit":[{"name":"Uncle Acid","artist":{"id":"e5edd3b8-2a81-42c4-93a4-c19a10713295","name":"Uncle
       Acid & the deadbeats","sort-name":"Uncle Acid & the deadbeats"}}],"releases":[{"id":"f993fa11-480d-4ed6-8d06-3ddd89a43800","count":1,"title":"The Night Creeper","status":"Official","release-group":{"id":"bba89ba7-bc7d-44e7-bbed-a43e8641b186","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"The
       Night Creeper","primary-type":"Album"},"date":"2016-09-08","country":"JP","release-events":[{"date":"2016-09-08","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","name":"Japan","sort-name":"Japan","iso-3166-1-codes":["JP"]}}],"track-count":10,"media":[{"position":1,"format":"CD","track":[{"id":"824aa9c1-d4cf-47c6-8559-38e47a9ce935","number":"9","title":"Slow
       Death","length":559653}],"track-count":10,"track-offset":8}]},{"id":"831abb30-5e9b-4681-98ab-14a51820e648","count":1,"title":"The Night Creeper","status":"Official","release-group":{"id":"bba89ba7-bc7d-44e7-bbed-a43e8641b186","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"The
@@ -47,7 +47,7 @@ interactions:
       Valley Blues","length":298973}],"track-count":10,"track-offset":5}]},{"id":"802cbea5-0edc-4382-a110-8d2407256e03","count":1,"title":"Mind Control","status":"Official","release-group":{"id":"4165fc3b-7da4-4251-aa7e-f7257cd6fc79","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Mind
       Control","primary-type":"Album"},"date":"2013-04-15","country":"GB","release-events":[{"date":"2013-04-15","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","name":"United Kingdom","sort-name":"United Kingdom","iso-3166-1-codes":["GB"]}}],"track-count":9,"media":[{"position":1,"format":"CD","track":[{"id":"f83dd55d-4088-3848-b3f1-093da95ffa7c","number":"6","title":"Death
       Valley Blues","length":298973}],"track-count":9,"track-offset":5}]}]}]}'
-- recorded: 2020-01-29T03:38:04.862Z
+- recorded: 2020-01-31T05:26:22.898Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=artist:%22Uncle+Acid+and+The+Deadbeats%22
@@ -56,14 +56,14 @@ interactions:
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Wed, 29 Jan 2020 03:38:04 GMT
-      etag: '"YTU3YWQ4MDAwMDAwMDAwMFNvbHI="'
-      last-modified: Wed, 29 Jan 2020 03:37:47 GMT
+      date: Fri, 31 Jan 2020 05:26:22 GMT
+      etag: '"ZGEyZWQ4MDAwMDAwMDAwMFNvbHI="'
+      last-modified: Fri, 31 Jan 2020 05:01:05 GMT
       vary: Accept-Encoding
-      x-cache-status: MISS
+      x-cache-status: STALE
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '1108'
-      x-ratelimit-reset: '1580269086'
-    body: '{"created":"2020-01-29T03:38:04.767Z","count":1,"offset":0,"artists":[{"id":"e5edd3b8-2a81-42c4-93a4-c19a10713295","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Uncle Acid & the deadbeats","sort-name":"Uncle Acid
+      x-ratelimit-remaining: '993'
+      x-ratelimit-reset: '1580448383'
+    body: '{"created":"2020-01-31T05:24:23.327Z","count":1,"offset":0,"artists":[{"id":"e5edd3b8-2a81-42c4-93a4-c19a10713295","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Uncle Acid & the deadbeats","sort-name":"Uncle Acid
       & the deadbeats","country":"GB","area":{"id":"8a754a16-0027-3a29-b6d7-2b40ea0481ed","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United Kingdom","sort-name":"United Kingdom","life-span":{"ended":null}},"begin-area":{"id":"11ba7f4f-3fb9-4b4b-a72f-ab1cd9c37d99","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Cambridge","sort-name":"Cambridge","life-span":{"ended":null}},"life-span":{"begin":"2009","ended":null},"tags":[{"count":1,"name":"stoner
       rock"},{"count":1,"name":"traditional doom metal"},{"count":1,"name":"doom metal"},{"count":1,"name":"psychedelic rock"},{"count":1,"name":"heavy psych"}]}]}'

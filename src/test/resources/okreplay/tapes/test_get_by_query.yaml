@@ -1,7 +1,7 @@
 !tape
 name: test get by query
 interactions:
-- recorded: 2020-01-26T23:01:47.220Z
+- recorded: 2020-01-31T05:25:53.230Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=artist:%22The+Sword%22+AND+title:Used+Future
@@ -10,15 +10,15 @@ interactions:
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Sun, 26 Jan 2020 23:01:47 GMT
-      etag: '"ODA3OTgyMDAwMDAwMDAwMFNvbHI="'
-      last-modified: Sun, 26 Jan 2020 22:55:24 GMT
+      date: Fri, 31 Jan 2020 05:25:53 GMT
+      etag: '"NDI0ODQyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Fri, 31 Jan 2020 05:23:11 GMT
       vary: Accept-Encoding
-      x-cache-status: STALE
+      x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '791'
-      x-ratelimit-reset: '1580079707'
-    body: '{"created":"2020-01-26T22:59:56.518Z","count":13,"offset":0,"recordings":[{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","score":100,"title":"Used Future","length":262000,"video":null,"artist-credit":[{"name":"The Sword","artist":{"id":"40dc452a-6b63-4b7e-a106-062739155866","name":"The
+      x-ratelimit-remaining: '976'
+      x-ratelimit-reset: '1580448353'
+    body: '{"created":"2020-01-31T05:25:53.076Z","count":13,"offset":0,"recordings":[{"id":"a9a05198-cbb8-4794-b75a-4781485887c0","score":100,"title":"Used Future","length":262000,"video":null,"artist-credit":[{"name":"The Sword","artist":{"id":"40dc452a-6b63-4b7e-a106-062739155866","name":"The
       Sword","sort-name":"Sword, The","disambiguation":"US metal band"}}],"releases":[{"id":"fcf7c7f5-f6d3-4800-b481-7a4ea220ef5f","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
       Future","primary-type":"Album"},"date":"2018","country":"XE","release-events":[{"date":"2018","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"d2841a5e-9eb0-4d6b-8186-1bac583b3408","number":"9","title":"Used
       Future","length":262000}],"track-count":13,"track-offset":8}]},{"id":"14346b7b-d20a-4266-b430-16b73f6afc8d","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
@@ -102,27 +102,47 @@ interactions:
       Media","track":[{"id":"ac84fc9e-3f03-450b-abf7-2e1dc1481406","number":"3","title":"Twilight Sunrise","length":187616}],"track-count":13,"track-offset":2}]},{"id":"3aeb2e72-347a-42f2-b474-deded1dedfa1","count":1,"title":"Used Future","status":"Official","release-group":{"id":"e54f9590-6395-4995-a05d-e0598e5f9e1d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Used
       Future","primary-type":"Album"},"date":"2018-03-23","country":"US","release-events":[{"date":"2018-03-23","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":13,"media":[{"position":1,"format":"CD","track":[{"id":"d48af839-3e56-42c9-bd2e-d8d27645c6d4","number":"3","title":"Twilight
       Sunrise","length":188000}],"track-count":13,"track-offset":2}]}]}]}'
-- recorded: 2020-01-29T03:38:06.043Z
+- recorded: 2020-01-31T05:26:24.877Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=artist:%22Slipknot%22
+    headers: {}
   response:
     status: 200
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Wed, 29 Jan 2020 03:38:05 GMT
-      etag: '"NjYxYWQ4MDAwMDAwMDAwMFNvbHI="'
-      last-modified: Wed, 29 Jan 2020 03:37:47 GMT
+      date: Fri, 31 Jan 2020 05:26:24 GMT
+      etag: '"NzUwZWQ4MDAwMDAwMDAwMFNvbHI="'
+      last-modified: Fri, 31 Jan 2020 05:01:05 GMT
       vary: Accept-Encoding
-      x-cache-status: MISS
+      x-cache-status: STALE
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '835'
-      x-ratelimit-reset: '1580269086'
-    body: '{"created":"2020-01-29T03:38:05.936Z","count":4,"offset":0,"artists":[{"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      x-ratelimit-remaining: '1044'
+      x-ratelimit-reset: '1580448385'
+    body: '{"created":"2020-01-31T05:24:24.851Z","count":4,"offset":0,"artists":[{"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
       States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"US
-      metal band","isnis":["0000000115481722"],"life-span":{"begin":"1995","ended":null},"tags":[{"count":2,"name":"heavy metal"},{"count":1,"name":"metal"},{"count":4,"name":"nu metal"},{"count":-1,"name":"new metal"},{"count":3,"name":"alternative metal"},{"count":-1,"name":"rap
-      metal"},{"count":2,"name":"groove metal"},{"count":0,"name":"rock and indie"}]},{"id":"ceb7b6be-1dbb-4d80-b157-5588bc884764","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":80,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      metal band","isnis":["0000000115481722"],"life-span":{"begin":"1995","ended":null},"tags":[{"count":3,"name":"heavy metal"},{"count":2,"name":"metal"},{"count":5,"name":"nu metal"},{"count":-1,"name":"new metal"},{"count":2,"name":"alternative metal"},{"count":-1,"name":"rap
+      metal"},{"count":1,"name":"groove metal"},{"count":0,"name":"rock and indie"}]},{"id":"ceb7b6be-1dbb-4d80-b157-5588bc884764","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":80,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
       States","sort-name":"United States","life-span":{"ended":null}},"disambiguation":"Late-80''s punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"connecticut"},{"count":1,"name":"usa"},{"count":1,"name":"punk"},{"count":1,"name":"new haven"}]},{"id":"5cd5cabf-1c2c-46cf-b8e6-83c7abb037c0","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":63,"name":"Slipknot
       Tribute Band","sort-name":"Slipknot Tribute Band","life-span":{"ended":null}},{"id":"1a7a3506-7f87-48e7-82d1-5f6e001587fb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":62,"name":"Slipknot杉並","sort-name":"Slipknot Suginami","country":"JP","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Japan","sort-name":"Japan","life-span":{"ended":null}},"disambiguation":"Slipknot
       Tribute Band","life-span":{"begin":"2016","ended":null},"aliases":[{"sort-name":"Slipknot Suginami","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Slipknot Suginami","locale":"en","type":"Artist name","primary":true,"begin-date":null,"end-date":null}]}]}'
+- recorded: 2020-01-31T05:45:47.637Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/area?fmt=json&query=area:Calgary
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Fri, 31 Jan 2020 05:45:47 GMT
+      etag: '"OGE2ODAwMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Thu, 30 Jan 2020 17:53:12 GMT
+      vary: Accept-Encoding
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '986'
+      x-ratelimit-reset: '1580449548'
+    body: '{"created":"2020-01-31T05:44:33.081Z","count":1,"offset":0,"areas":[{"id":"f88bfae6-8a35-4bed-bd37-8ea16ba2b9c6","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","score":100,"name":"Calgary","sort-name":"Calgary","life-span":{"ended":null},"relation-list":[{"relations":[{"type":"part
+      of","type-id":"de7cc874-8b1b-3a05-8272-f3834c968fb7","target":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","direction":"backward","area":{"id":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","type":"Subdivision","type-id":"fd3d44c5-80a1-3842-9745-2c4972d35afa","name":"Alberta","sort-name":"Alberta","life-span":{"ended":null}}}]}]}]}'
