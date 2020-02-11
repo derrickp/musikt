@@ -1,17 +1,25 @@
-package dev.plotsky.musikt.search
+package dev.plotsky.musikt.search.recordings
 
+import dev.plotsky.musikt.search.Query
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 
-class ArtistQuery(
-    val artist: String? = null
+class RecordingQuery(
+    val artist: String? = null,
+    val artistname: String? = null,
+    val title: String? = null
 ) : Query {
     override fun getQuery(): String {
-        TODO("not implemented")
+        val terms = mapOf(
+            "artist" to artist, "title" to title, "artistname" to artistname
+        ).filterValues { it != null }
+        return terms.map { "${it.key}:${it.value}" }.joinToString(" AND ")
     }
 
     override fun getEncodedQuery(): String {
-        val terms = mapOf("artist" to artist).filterValues { it != null }
+        val terms = mapOf(
+            "artist" to artist, "title" to title, "artistname" to artistname
+        ).filterValues { it != null }
         val queryTerms = terms
             .map { "${it.key}:${getEncodedValue(it.value!!)}" }
         return queryTerms.joinToString("+AND+")

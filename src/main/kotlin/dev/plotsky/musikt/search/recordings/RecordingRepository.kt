@@ -1,17 +1,27 @@
-package dev.plotsky.musikt.search
+package dev.plotsky.musikt.search.recordings
 
 import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.entities.recordings.Recording
 import dev.plotsky.musikt.entities.recordings.RecordingList
+import dev.plotsky.musikt.search.IdOptions
+import dev.plotsky.musikt.search.MusicbrainzIdSearch
+import dev.plotsky.musikt.search.MusicbrainzListSearch
+import dev.plotsky.musikt.search.Query
+import dev.plotsky.musikt.search.Repository
 
 class RecordingRepository(
     request: Request
 ) : Repository<Recording> {
-    private val idSearch = MusicbrainzIdSearch(Recording::class.java, request)
-    private val listSearch = MusicbrainzListSearch(
-        RecordingList::class.java,
-        request
-    )
+    private val idSearch =
+        MusicbrainzIdSearch(
+            Recording::class.java,
+            request
+        )
+    private val listSearch =
+        MusicbrainzListSearch(
+            RecordingList::class.java,
+            request
+        )
 
     private val endpoint = "recording"
 
