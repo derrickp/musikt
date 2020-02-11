@@ -1,59 +1,65 @@
 !tape
 name: test get items by id
 interactions:
-- recorded: 2020-01-31T05:25:42.897Z
-  request:
-    method: GET
-    uri: https://musicbrainz.org/ws/2/recording/a9a05198-cbb8-4794-b75a-4781485887c0?fmt=json
-  response:
-    status: 200
-    headers:
-      access-control-allow-origin: '*'
-      content-length: '117'
-      content-type: application/json; charset=utf-8
-      date: Fri, 31 Jan 2020 05:25:42 GMT
-      etag: '"38c6e5d4f849b544d8faa0fc594846eb"'
-      server: Plack::Handler::Starlet
-      x-cache-status: MISS
-      x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '1045'
-      x-ratelimit-reset: '1580448343'
-    body: '{"video":false,"disambiguation":"","title":"Used Future","id":"a9a05198-cbb8-4794-b75a-4781485887c0","length":262000}'
-- recorded: 2020-01-31T05:26:17.507Z
-  request:
-    method: GET
-    uri: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?fmt=json
-    headers: {}
-  response:
-    status: 200
-    headers:
-      access-control-allow-origin: '*'
-      content-type: application/json; charset=utf-8
-      date: Fri, 31 Jan 2020 05:26:17 GMT
-      etag: W/"846f09959dac36f5e60768f784dcfd22"
-      server: Plack::Handler::Starlet
-      vary: Accept-Encoding
-      x-cache-status: MISS
-      x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '935'
-      x-ratelimit-reset: '1580448377'
-    body: '{"disambiguation":"US metal band","gender-id":null,"sort-name":"Slipknot","begin_area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","name":"Des Moines","disambiguation":"","sort-name":"Des Moines"},"type":"Group","isnis":["0000000115481722"],"ipis":[],"area":{"id":"489ce91b-6658-3307-9877-795b68554c98","iso-3166-1-codes":["US"],"sort-name":"United
-      States","name":"United States","disambiguation":""},"name":"Slipknot","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","gender":null,"country":"US","life-span":{"end":null,"ended":false,"begin":"1995"},"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","end_area":null}'
-- recorded: 2020-01-31T05:45:43.960Z
+- recorded: 2020-02-11T04:36:00.035Z
   request:
     method: GET
     uri: https://musicbrainz.org/ws/2/area/2bda1647-f64b-4277-acce-e9c1296d065e?fmt=json
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
   response:
     status: 200
     headers:
       access-control-allow-origin: '*'
       content-length: '225'
       content-type: application/json; charset=utf-8
-      date: Fri, 31 Jan 2020 05:45:43 GMT
-      etag: '"38d1083edadaceec208b02231b4a94aa"'
+      date: Tue, 11 Feb 2020 04:35:59 GMT
+      etag: '"e04c4e0358490966ba6e3b98f2355b16"'
       server: Plack::Handler::Starlet
-      x-cache-status: STALE
+      x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '964'
-      x-ratelimit-reset: '1580449544'
-    body: '{"life-span":{"ended":false,"begin":null,"end":null},"sort-name":"Des Moines","type":"City","disambiguation":"","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des Moines","id":"2bda1647-f64b-4277-acce-e9c1296d065e"}'
+      x-ratelimit-remaining: '970'
+      x-ratelimit-reset: '1581395760'
+    body: '{"name":"Des Moines","disambiguation":"","life-span":{"end":null,"ended":false,"begin":null},"sort-name":"Des Moines","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","type":"City","id":"2bda1647-f64b-4277-acce-e9c1296d065e"}'
+- recorded: 2020-02-11T04:36:07.204Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/artist/a466c2a2-6517-42fb-a160-1087c3bafd9f?fmt=json
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json; charset=utf-8
+      date: Tue, 11 Feb 2020 04:36:07 GMT
+      etag: W/"44858f3f45f06fd7d2d2efed15122120"
+      server: Plack::Handler::Starlet
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '1108'
+      x-ratelimit-reset: '1581395768'
+    body: '{"end_area":null,"disambiguation":"US metal band","isnis":["0000000115481722"],"gender":null,"name":"Slipknot","ipis":[],"country":"US","sort-name":"Slipknot","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","disambiguation":"","sort-name":"United
+      States","iso-3166-1-codes":["US"]},"end-area":null,"type":"Group","id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","begin_area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","sort-name":"Des Moines","disambiguation":"","name":"Des Moines"},"type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","life-span":{"ended":false,"begin":"1995","end":null},"gender-id":null,"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","sort-name":"Des
+      Moines","disambiguation":"","name":"Des Moines"}}'
+- recorded: 2020-02-11T04:36:19.884Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording/a9a05198-cbb8-4794-b75a-4781485887c0?fmt=json
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-length: '117'
+      content-type: application/json; charset=utf-8
+      date: Tue, 11 Feb 2020 04:36:19 GMT
+      etag: '"398ae73c5317b87bc08173b0213a428c"'
+      server: Plack::Handler::Starlet
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '957'
+      x-ratelimit-reset: '1581395780'
+    body: '{"length":262000,"video":false,"disambiguation":"","id":"a9a05198-cbb8-4794-b75a-4781485887c0","title":"Used Future"}'

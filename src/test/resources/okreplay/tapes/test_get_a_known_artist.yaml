@@ -1,0 +1,25 @@
+!tape
+name: test get a known artist
+interactions:
+- recorded: 2020-02-11T04:36:18.029Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=title:Burning+Planet+AND+artistname:%22Lord+Vapour%22
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Tue, 11 Feb 2020 04:36:17 GMT
+      etag: '"MmJkMmMyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Tue, 11 Feb 2020 04:31:06 GMT
+      vary: Accept-Encoding
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '970'
+      x-ratelimit-reset: '1581395778'
+    body: '{"created":"2020-02-11T04:34:34.480Z","count":1,"offset":0,"recordings":[{"id":"8ad596f7-b313-4e47-a895-e0479c437bef","score":100,"title":"Burning Planet","length":349568,"video":null,"artist-credit":[{"name":"Lord Vapour","artist":{"id":"3191d851-1b22-4085-a818-64c41e408b4c","name":"Lord
+      Vapour","sort-name":"Lord Vapour"}}],"releases":[{"id":"8251c4ac-897e-4f51-bb34-fde0595a96c2","count":1,"title":"Semuta","status":"Official","release-group":{"id":"69ee3766-eb4d-44be-9923-d996bbd8358a","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Semuta","primary-type":"Album"},"date":"2018-12-01","country":"XW","release-events":[{"date":"2018-12-01","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"track-count":6,"media":[{"position":1,"format":"Digital
+      Media","track":[{"id":"d1cefea5-60b5-49e0-ba98-bbc1ba11b159","number":"1","title":"Burning Planet","length":349568}],"track-count":6,"track-offset":0}]}]}]}'

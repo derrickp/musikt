@@ -80,4 +80,16 @@ class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
         val recordings = repo.getByQuery(query)
         assertEquals(4, recordings.size)
     }
+
+    @Test
+    @OkReplay
+    fun testGetAKnownArtist() {
+        val query = RecordingQuery(
+            artistname = "\"Lord Vapour\"",
+            title = "Burning Planet"
+        )
+        val repo = RecordingRepository(request)
+        val recordings = repo.getByQuery(query)
+        assertEquals(1, recordings.size)
+    }
 }

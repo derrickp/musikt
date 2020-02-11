@@ -16,8 +16,15 @@ class Request(
             "${it.key}=${it.value}"
         }
         val url = "${config.baseUrl}/$endpoint?$urlQuery"
-        val request = OkHttpRequest.Builder().url(url).build()
+        val request = buildRequest(url)
         return client.newCall(request).execute()
+    }
+
+    private fun buildRequest(url: String): okhttp3.Request {
+        return OkHttpRequest.Builder()
+            .addHeader("User-Agent", "${config.appName} ${config.contact}")
+            .url(url)
+            .build()
     }
 }
 

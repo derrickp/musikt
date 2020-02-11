@@ -1,27 +1,84 @@
 !tape
 name: test get by term
 interactions:
-- recorded: 2020-01-31T05:25:58.149Z
+- recorded: 2020-02-11T04:36:05.556Z
   request:
     method: GET
-    uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=The+Sword
+    uri: https://musicbrainz.org/ws/2/area?fmt=json&query=Calgary
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
   response:
     status: 200
     headers:
       access-control-allow-origin: '*'
-      cache-control: no-cache, no-store
       content-type: application/json
-      date: Fri, 31 Jan 2020 05:25:57 GMT
-      etag: '"16ffa101e14"'
-      expires: Sat, 01 Jan 2000 01:00:00 GMT
-      last-modified: Fri, 31 Jan 2020 05:25:57 GMT
-      pragma: no-cache
+      date: Tue, 11 Feb 2020 04:36:05 GMT
+      etag: '"MmI2ODAwMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Sun, 09 Feb 2020 12:27:29 GMT
       vary: Accept-Encoding
       x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '996'
-      x-ratelimit-reset: '1580448355'
-    body: '{"created":"2020-01-31T05:25:57.921Z","count":6664197,"offset":0,"recordings":[{"id":"644a0261-7108-46d1-a130-38a178200e21","score":100,"title":"The Sword","video":null,"artist-credit":[{"name":"Abortived Gasp","artist":{"id":"6bf6c10c-968c-4dcd-adda-ae58b5a34af4","name":"Abortived
+      x-ratelimit-remaining: '1077'
+      x-ratelimit-reset: '1581395766'
+    body: '{"created":"2020-02-11T04:36:05.374Z","count":1,"offset":0,"areas":[{"id":"f88bfae6-8a35-4bed-bd37-8ea16ba2b9c6","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","score":100,"name":"Calgary","sort-name":"Calgary","life-span":{"ended":null},"relation-list":[{"relations":[{"type":"part
+      of","type-id":"de7cc874-8b1b-3a05-8272-f3834c968fb7","target":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","direction":"backward","area":{"id":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","type":"Subdivision","type-id":"fd3d44c5-80a1-3842-9745-2c4972d35afa","name":"Alberta","sort-name":"Alberta","life-span":{"ended":null}}}]}]}]}'
+- recorded: 2020-02-11T04:36:16.204Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=Slipknot
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Tue, 11 Feb 2020 04:36:16 GMT
+      etag: '"YWFmN2Q4MDAwMDAwMDAwMFNvbHI="'
+      last-modified: Tue, 11 Feb 2020 04:28:06 GMT
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '913'
+      x-ratelimit-reset: '1581395776'
+    body: '{"created":"2020-02-11T04:36:16.135Z","count":9,"offset":0,"artists":[{"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"US
+      metal band","isnis":["0000000115481722"],"life-span":{"begin":"1995","ended":null},"tags":[{"count":3,"name":"heavy metal"},{"count":2,"name":"metal"},{"count":5,"name":"nu metal"},{"count":-1,"name":"new metal"},{"count":2,"name":"alternative metal"},{"count":-1,"name":"rap
+      metal"},{"count":1,"name":"groove metal"},{"count":0,"name":"rock and indie"}]},{"id":"ceb7b6be-1dbb-4d80-b157-5588bc884764","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":87,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
+      States","sort-name":"United States","life-span":{"ended":null}},"disambiguation":"Late-80''s punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"connecticut"},{"count":1,"name":"usa"},{"count":1,"name":"punk"},{"count":1,"name":"new haven"}]},{"id":"1a7a3506-7f87-48e7-82d1-5f6e001587fb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":67,"name":"Slipknot杉並","sort-name":"Slipknot
+      Suginami","country":"JP","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Japan","sort-name":"Japan","life-span":{"ended":null}},"disambiguation":"Slipknot Tribute Band","life-span":{"begin":"2016","ended":null},"aliases":[{"sort-name":"Slipknot
+      Suginami","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Slipknot Suginami","locale":"en","type":"Artist name","primary":true,"begin-date":null,"end-date":null}]},{"id":"5cd5cabf-1c2c-46cf-b8e6-83c7abb037c0","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":64,"name":"Slipknot
+      Tribute Band","sort-name":"Slipknot Tribute Band","life-span":{"ended":null}},{"id":"6eecd596-4d43-40e0-abda-88a4de12e70e","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":63,"name":"Slip-Not Tribute","sort-name":"Slipknot Tribute","area":{"id":"05f68b4c-10f3-49b5-b28c-260a1b707043","type":"Subdivision","type-id":"fd3d44c5-80a1-3842-9745-2c4972d35afa","name":"Massachusetts","sort-name":"Massachusetts","life-span":{"ended":null}},"life-span":{"begin":"2006-06-06","ended":null}},{"id":"619cbce5-7bfa-4f46-b2aa-6a19c1e96d50","type":"Person","type-id":"b6e035f4-3ce9-331c-97df-83397230b0df","score":43,"name":"Paul
+      Gray","sort-name":"Gray, Paul","gender":"male","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"1f40c6e1-47ba-4e35-996f-fe6ee5840e62","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Los
+      Angeles","sort-name":"Los Angeles","life-span":{"ended":null}},"end-area":{"id":"c4134575-6f36-45e1-9926-384eafb49e8b","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Johnston","sort-name":"Johnston","life-span":{"ended":null}},"disambiguation":"Slipknot
+      bassist","life-span":{"begin":"1972-04-08","end":"2010-05-24","ended":true},"aliases":[{"sort-name":"Gray, Paul D.","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Paul D. Gray","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Gray,
+      Paul Dedrick","type-id":"d4dcd0c0-b341-3612-a332-c0ce797b25cf","name":"Paul Dedrick Gray","locale":null,"type":"Legal name","primary":null,"begin-date":null,"end-date":null}]},{"id":"3e3f1a27-9390-4c53-819d-5a4501165f38","type":"Person","type-id":"b6e035f4-3ce9-331c-97df-83397230b0df","score":43,"name":"Craig
+      Jones","sort-name":"Jones, Craig","gender":"male","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des
+      Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"Slipknot sampler","life-span":{"begin":"1972-02-11","ended":null},"aliases":[{"sort-name":"Jones, Craig A.","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Craig A.
+      Jones","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Jones, Craig Michael","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Craig Michael Jones","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Craig
+      ''133'' Jones","name":"Craig ''133'' Jones","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Craig \"133\" Jones","name":"Craig \"133\" Jones","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"133","name":"133","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]},{"id":"f5d7d201-4165-4fc6-a469-3205e9e44999","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":40,"name":"Slipknowt","sort-name":"Slipknowt","disambiguation":"Slipknot
+      tribute band","life-span":{"ended":null}},{"id":"fc12f238-938c-4bb0-8c02-12ce5bcb4a71","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":37,"name":"Subliminal Verses","sort-name":"Subliminal Verses","country":"IT","area":{"id":"c6500277-9a3d-349b-bf30-41afdbf42add","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Italy","sort-name":"Italy","life-span":{"ended":null}},"disambiguation":"Italian
+      Slipknot tribute band","life-span":{"ended":null}}]}'
+- recorded: 2020-02-11T04:36:30.748Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=The+Sword
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Tue, 11 Feb 2020 04:36:30 GMT
+      etag: '"ZGNlNzQyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Tue, 11 Feb 2020 04:32:35 GMT
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '901'
+      x-ratelimit-reset: '1581395788'
+    body: '{"created":"2020-02-11T04:36:30.511Z","count":6765975,"offset":0,"recordings":[{"id":"644a0261-7108-46d1-a130-38a178200e21","score":100,"title":"The Sword","video":null,"artist-credit":[{"name":"Abortived Gasp","artist":{"id":"6bf6c10c-968c-4dcd-adda-ae58b5a34af4","name":"Abortived
       Gasp","sort-name":"Abortived Gasp"}}],"releases":[{"id":"57456db1-4d83-4527-b42d-6603ca85e45d","count":1,"title":"A Fridge Fulla Bribes","status":"Official","release-group":{"id":"7eca9edf-f61a-404e-8b3c-53f4fd32f8d3","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"A
       Fridge Fulla Bribes","primary-type":"Album","secondary-types":["Mixtape/Street"]},"date":"1989","country":"US","release-events":[{"date":"1989","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"track-count":15,"media":[{"position":1,"format":"Cassette","track":[{"id":"f9098f28-7c4a-4f71-a2b3-d49041050415","number":"B8","title":"The
       Sword"}],"track-count":15,"track-offset":14}]}]},{"id":"8e0109b8-cf8d-4d3e-9396-fcf85b35f568","score":100,"title":"The Sword","length":293000,"video":null,"artist-credit":[{"name":"Profugus Mortis","artist":{"id":"5827348a-c289-4eb1-851d-04bb9bd6b4eb","name":"Profugus
@@ -103,58 +160,3 @@ interactions:
       Sword","length":75000}],"track-count":7,"track-offset":1}]}],"isrcs":["GB3P81100002"]},{"id":"eefe65c7-1b69-4493-9281-b9d80225ed60","score":100,"title":"The Sword","video":null,"artist-credit":[{"name":"Mark Morgan","artist":{"id":"fa0099dd-927d-49d7-8f96-45d4d95eea8e","name":"Mark
       Morgan","sort-name":"Morgan, Mark","disambiguation":"score composer"}}],"releases":[{"id":"7cbbd808-dcae-4012-a31b-8363f8cb87c9","count":1,"title":"Zork Nemesis","status":"Bootleg","release-group":{"id":"78b0fbf2-2116-4c73-9f31-845e2fbfd179","type-id":"22a628ad-c082-3c4f-b1b6-d41665107b88","title":"Zork
       Nemesis","primary-type":"Album","secondary-types":["Soundtrack"]},"track-count":44,"media":[{"position":1,"format":"Digital Media","track":[{"id":"c258785d-cfd4-3e2b-9427-a118a22f0de7","number":"25","title":"The Sword"}],"track-count":44,"track-offset":24}]}]}]}'
-- recorded: 2020-01-31T05:26:26.613Z
-  request:
-    method: GET
-    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=Slipknot
-    headers: {}
-  response:
-    status: 200
-    headers:
-      access-control-allow-origin: '*'
-      content-type: application/json
-      date: Fri, 31 Jan 2020 05:26:26 GMT
-      etag: '"YWFmNmQ4MDAwMDAwMDAwMFNvbHI="'
-      last-modified: Fri, 31 Jan 2020 05:01:05 GMT
-      vary: Accept-Encoding
-      x-cache-status: STALE
-      x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '1111'
-      x-ratelimit-reset: '1580448387'
-    body: '{"created":"2020-01-31T05:24:26.692Z","count":9,"offset":0,"artists":[{"id":"a466c2a2-6517-42fb-a160-1087c3bafd9f","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
-      States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"US
-      metal band","isnis":["0000000115481722"],"life-span":{"begin":"1995","ended":null},"tags":[{"count":3,"name":"heavy metal"},{"count":2,"name":"metal"},{"count":5,"name":"nu metal"},{"count":-1,"name":"new metal"},{"count":2,"name":"alternative metal"},{"count":-1,"name":"rap
-      metal"},{"count":1,"name":"groove metal"},{"count":0,"name":"rock and indie"}]},{"id":"ceb7b6be-1dbb-4d80-b157-5588bc884764","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":87,"name":"Slipknot","sort-name":"Slipknot","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United
-      States","sort-name":"United States","life-span":{"ended":null}},"disambiguation":"Late-80''s punk band","life-span":{"ended":null},"tags":[{"count":1,"name":"connecticut"},{"count":1,"name":"usa"},{"count":1,"name":"punk"},{"count":1,"name":"new haven"}]},{"id":"1a7a3506-7f87-48e7-82d1-5f6e001587fb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":67,"name":"Slipknot杉並","sort-name":"Slipknot
-      Suginami","country":"JP","area":{"id":"2db42837-c832-3c27-b4a3-08198f75693c","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Japan","sort-name":"Japan","life-span":{"ended":null}},"disambiguation":"Slipknot Tribute Band","life-span":{"begin":"2016","ended":null},"aliases":[{"sort-name":"Slipknot
-      Suginami","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Slipknot Suginami","locale":"en","type":"Artist name","primary":true,"begin-date":null,"end-date":null}]},{"id":"5cd5cabf-1c2c-46cf-b8e6-83c7abb037c0","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":64,"name":"Slipknot
-      Tribute Band","sort-name":"Slipknot Tribute Band","life-span":{"ended":null}},{"id":"6eecd596-4d43-40e0-abda-88a4de12e70e","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":63,"name":"Slip-Not Tribute","sort-name":"Slipknot Tribute","area":{"id":"05f68b4c-10f3-49b5-b28c-260a1b707043","type":"Subdivision","type-id":"fd3d44c5-80a1-3842-9745-2c4972d35afa","name":"Massachusetts","sort-name":"Massachusetts","life-span":{"ended":null}},"life-span":{"begin":"2006-06-06","ended":null}},{"id":"619cbce5-7bfa-4f46-b2aa-6a19c1e96d50","type":"Person","type-id":"b6e035f4-3ce9-331c-97df-83397230b0df","score":43,"name":"Paul
-      Gray","sort-name":"Gray, Paul","gender":"male","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"1f40c6e1-47ba-4e35-996f-fe6ee5840e62","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Los
-      Angeles","sort-name":"Los Angeles","life-span":{"ended":null}},"end-area":{"id":"c4134575-6f36-45e1-9926-384eafb49e8b","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Johnston","sort-name":"Johnston","life-span":{"ended":null}},"disambiguation":"Slipknot
-      bassist","life-span":{"begin":"1972-04-08","end":"2010-05-24","ended":true},"aliases":[{"sort-name":"Gray, Paul D.","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Paul D. Gray","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Gray,
-      Paul Dedrick","type-id":"d4dcd0c0-b341-3612-a332-c0ce797b25cf","name":"Paul Dedrick Gray","locale":null,"type":"Legal name","primary":null,"begin-date":null,"end-date":null}]},{"id":"3e3f1a27-9390-4c53-819d-5a4501165f38","type":"Person","type-id":"b6e035f4-3ce9-331c-97df-83397230b0df","score":43,"name":"Craig
-      Jones","sort-name":"Jones, Craig","gender":"male","country":"US","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"United States","sort-name":"United States","life-span":{"ended":null}},"begin-area":{"id":"2bda1647-f64b-4277-acce-e9c1296d065e","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"Des
-      Moines","sort-name":"Des Moines","life-span":{"ended":null}},"disambiguation":"Slipknot sampler","life-span":{"begin":"1972-02-11","ended":null},"aliases":[{"sort-name":"Jones, Craig A.","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Craig A.
-      Jones","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Jones, Craig Michael","type-id":"894afba6-2816-3c24-8072-eadb66bd04bc","name":"Craig Michael Jones","locale":null,"type":"Artist name","primary":null,"begin-date":null,"end-date":null},{"sort-name":"Craig
-      ''133'' Jones","name":"Craig ''133'' Jones","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"Craig \"133\" Jones","name":"Craig \"133\" Jones","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null},{"sort-name":"133","name":"133","locale":null,"type":null,"primary":null,"begin-date":null,"end-date":null}]},{"id":"f5d7d201-4165-4fc6-a469-3205e9e44999","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":40,"name":"Slipknowt","sort-name":"Slipknowt","disambiguation":"Slipknot
-      tribute band","life-span":{"ended":null}},{"id":"fc12f238-938c-4bb0-8c02-12ce5bcb4a71","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":37,"name":"Subliminal Verses","sort-name":"Subliminal Verses","country":"IT","area":{"id":"c6500277-9a3d-349b-bf30-41afdbf42add","type":"Country","type-id":"06dd0ae4-8c74-30bb-b43d-95dcedf961de","name":"Italy","sort-name":"Italy","life-span":{"ended":null}},"disambiguation":"Italian
-      Slipknot tribute band","life-span":{"ended":null}}]}'
-- recorded: 2020-01-31T05:45:49.480Z
-  request:
-    method: GET
-    uri: https://musicbrainz.org/ws/2/area?fmt=json&query=Calgary
-  response:
-    status: 200
-    headers:
-      access-control-allow-origin: '*'
-      content-type: application/json
-      date: Fri, 31 Jan 2020 05:45:49 GMT
-      etag: '"OGE2ODAwMDAwMDAwMDAwMFNvbHI="'
-      last-modified: Thu, 30 Jan 2020 17:53:12 GMT
-      vary: Accept-Encoding
-      x-cache-status: STALE
-      x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '1065'
-      x-ratelimit-reset: '1580449550'
-    body: '{"created":"2020-01-31T05:44:08.209Z","count":1,"offset":0,"areas":[{"id":"f88bfae6-8a35-4bed-bd37-8ea16ba2b9c6","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","score":100,"name":"Calgary","sort-name":"Calgary","life-span":{"ended":null},"relation-list":[{"relations":[{"type":"part
-      of","type-id":"de7cc874-8b1b-3a05-8272-f3834c968fb7","target":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","direction":"backward","area":{"id":"11e1b699-4e38-49b0-bb24-5092e0f8f4ad","type":"Subdivision","type-id":"fd3d44c5-80a1-3842-9745-2c4972d35afa","name":"Alberta","sort-name":"Alberta","life-span":{"ended":null}}}]}]}]}'

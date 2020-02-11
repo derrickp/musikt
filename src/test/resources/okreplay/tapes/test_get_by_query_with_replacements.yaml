@@ -1,24 +1,47 @@
 !tape
 name: test get by query with replacements
 interactions:
-- recorded: 2020-01-31T05:25:46.485Z
+- recorded: 2020-02-11T04:36:08.937Z
   request:
     method: GET
-    uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=artist:%22Zeal+and+Ardor%22+AND+title:Gravedigger+Chant
+    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=artist:%22Zeal+and+Ardor%22
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
   response:
     status: 200
     headers:
       access-control-allow-origin: '*'
       content-type: application/json
-      date: Fri, 31 Jan 2020 05:25:46 GMT
-      etag: '"NTMwNDIwMDAwMDAwMDAwU29scg=="'
-      last-modified: Fri, 31 Jan 2020 05:22:48 GMT
+      date: Tue, 11 Feb 2020 04:36:08 GMT
+      etag: '"YjYxN2Q4MDAwMDAwMDAwMFNvbHI="'
+      last-modified: Tue, 11 Feb 2020 04:28:06 GMT
       vary: Accept-Encoding
       x-cache-status: MISS
       x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '1107'
-      x-ratelimit-reset: '1580448347'
-    body: '{"created":"2020-01-31T05:25:46.399Z","count":2,"offset":0,"recordings":[{"id":"2cf06da0-9941-4b50-b9ef-0976f4a9d5f1","score":100,"title":"Gravedigger''s Chant","length":191213,"video":null,"artist-credit":[{"name":"Zeal and Ardor","artist":{"id":"5e90193b-5183-406b-9f3a-b66bb66daccb","name":"Zeal
+      x-ratelimit-remaining: '1199'
+      x-ratelimit-reset: '1581395770'
+    body: '{"created":"2020-02-11T04:36:08.761Z","count":1,"offset":0,"artists":[{"id":"5e90193b-5183-406b-9f3a-b66bb66daccb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Zeal and Ardor","sort-name":"Zeal and Ardor","area":{"id":"74e50e58-5deb-4b99-93a2-decbb365c07f","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"New
+      York","sort-name":"New York","life-span":{"ended":null}},"life-span":{"begin":"2013","ended":null},"tags":[{"count":1,"name":"negro spiritual"},{"count":1,"name":"black metal"},{"count":1,"name":"melodic death metal"},{"count":1,"name":"metal"}]}]}'
+- recorded: 2020-02-11T04:36:21.839Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/recording?fmt=json&query=artist:%22Zeal+and+Ardor%22+AND+title:Gravedigger+Chant
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json
+      date: Tue, 11 Feb 2020 04:36:21 GMT
+      etag: '"NzdiNzQyMDAwMDAwMDAwMFNvbHI="'
+      last-modified: Tue, 11 Feb 2020 04:31:24 GMT
+      vary: Accept-Encoding
+      x-cache-status: MISS
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '999'
+      x-ratelimit-reset: '1581395782'
+    body: '{"created":"2020-02-11T04:36:21.681Z","count":2,"offset":0,"recordings":[{"id":"2cf06da0-9941-4b50-b9ef-0976f4a9d5f1","score":100,"title":"Gravedigger''s Chant","length":191213,"video":null,"artist-credit":[{"name":"Zeal and Ardor","artist":{"id":"5e90193b-5183-406b-9f3a-b66bb66daccb","name":"Zeal
       and Ardor","sort-name":"Zeal and Ardor"}}],"releases":[{"id":"bd73e075-8ed8-4eb8-99b9-c87ced626050","count":2,"title":"Stranger Fruit","status":"Official","artist-credit":[{"name":"Zeal & Ardor","artist":{"id":"5e90193b-5183-406b-9f3a-b66bb66daccb","name":"Zeal
       and Ardor","sort-name":"Zeal and Ardor"}}],"release-group":{"id":"c4b52154-aee9-4d8a-af6e-20ec508e2b03","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Stranger Fruit","primary-type":"Album"},"date":"2018-06-07","country":"XE","release-events":[{"date":"2018-06-07","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"track-count":16,"media":[{"position":1,"format":"12\"
       Vinyl","track":[{"id":"78733f79-6010-4ed1-bb8d-04b2387ce99b","number":"A2","title":"Gravedigger''s Chant"}],"track-count":8,"track-offset":1}]},{"id":"da90b87f-3cb5-4a58-b756-9f54539d8c77","count":1,"title":"Gravedigger''s Chant","status":"Official","release-group":{"id":"288d2c49-237d-4740-8958-ef6ffd6204c4","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Gravedigger''s
@@ -35,22 +58,3 @@ interactions:
       Chant","length":206547}],"track-count":22,"track-offset":15}]},{"id":"2659e956-56e7-48f6-af8c-8ce73069e64d","count":1,"title":"Live in London","status":"Official","release-group":{"id":"b97c1997-9cb5-49eb-a0b6-657d7348c76b","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","title":"Live
       in London","primary-type":"Album","secondary-types":["Live"]},"date":"2019-03-22","country":"XW","release-events":[{"date":"2019-03-22","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"track-count":22,"media":[{"position":1,"format":"Digital
       Media","track":[{"id":"ddaef3c6-9539-40a5-a775-0779ff9fb199","number":"16","title":"Gravedigger''s Chant","length":206547}],"track-count":22,"track-offset":15}]}]}]}'
-- recorded: 2020-01-31T05:26:19.652Z
-  request:
-    method: GET
-    uri: https://musicbrainz.org/ws/2/artist?fmt=json&query=artist:%22Zeal+and+Ardor%22
-  response:
-    status: 200
-    headers:
-      access-control-allow-origin: '*'
-      content-type: application/json
-      date: Fri, 31 Jan 2020 05:26:19 GMT
-      etag: '"NjBlZWQ4MDAwMDAwMDAwMFNvbHI="'
-      last-modified: Fri, 31 Jan 2020 05:01:05 GMT
-      vary: Accept-Encoding
-      x-cache-status: STALE
-      x-ratelimit-limit: '1200'
-      x-ratelimit-remaining: '885'
-      x-ratelimit-reset: '1580448379'
-    body: '{"created":"2020-01-31T05:24:19.852Z","count":1,"offset":0,"artists":[{"id":"5e90193b-5183-406b-9f3a-b66bb66daccb","type":"Group","type-id":"e431f5f6-b5d2-343d-8b36-72607fffb74b","score":100,"name":"Zeal and Ardor","sort-name":"Zeal and Ardor","area":{"id":"74e50e58-5deb-4b99-93a2-decbb365c07f","type":"City","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","name":"New
-      York","sort-name":"New York","life-span":{"ended":null}},"life-span":{"begin":"2013","ended":null},"tags":[{"count":1,"name":"negro spiritual"},{"count":1,"name":"black metal"},{"count":1,"name":"melodic death metal"},{"count":1,"name":"metal"}]}]}'
