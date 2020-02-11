@@ -1,0 +1,24 @@
+!tape
+name: test get by id returns type
+interactions:
+- recorded: 2020-02-11T07:45:20.445Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/area/b21e4552-050d-4c0c-ac5a-031108eb0c47?fmt=json&inc=area-rels
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json; charset=utf-8
+      date: Tue, 11 Feb 2020 07:45:20 GMT
+      etag: W/"f4d6b7de2909fc90533a3807c70a027e"
+      server: Plack::Handler::Starlet
+      vary: Accept-Encoding
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '873'
+      x-ratelimit-reset: '1581407120'
+    body: '{"sort-name":"Louisville","name":"Louisville","id":"b21e4552-050d-4c0c-ac5a-031108eb0c47","disambiguation":"","type-id":"6fd8f29a-3d0a-32fc-980d-ea697b69da78","life-span":{"ended":false,"end":null,"begin":null},"relations":[{"target-credit":"","attributes":[],"begin":null,"type-id":"de7cc874-8b1b-3a05-8272-f3834c968fb7","area":{"disambiguation":"","id":"e5423e1c-cc16-4a99-9f92-916bdfd9e74e","name":"Jefferson
+      County","sort-name":"Jefferson County"},"direction":"backward","ended":false,"attribute-values":{},"attribute-ids":{},"source-credit":"","target-type":"area","end":null,"type":"part of"}],"type":"City"}'

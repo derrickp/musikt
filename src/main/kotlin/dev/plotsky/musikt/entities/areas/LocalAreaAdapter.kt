@@ -14,6 +14,7 @@ class LocalAreaAdapter {
                 "target-type" to it.targetType,
                 "direction" to it.direction,
                 "type-id" to it.typeId,
+                "type" to it.type,
                 "area" to mapOf(
                     "disambiguation" to it.area.disambiguation,
                     "sort-name" to it.area.sortName,
@@ -29,7 +30,8 @@ class LocalAreaAdapter {
             disambiguation = area.disambiguation,
             lifeSpan = area.lifeSpan,
             relations = areaRelations,
-            score = area.score
+            score = area.score,
+            type = area.type
         )
     }
 
@@ -46,7 +48,8 @@ class LocalAreaAdapter {
             typeId = areaJson.typeId,
             lifeSpan = areaJson.lifeSpan,
             relatedAreas = relatedAreas,
-            score = areaJson.score
+            score = areaJson.score,
+            type = areaJson.type
         )
     }
 

@@ -14,5 +14,6 @@ data class AreaJson(
     val typeId: String = "",
     @Json(name = "life-span")
     val lifeSpan: LifeSpan?,
-    val score: Int?
+    val score: Int?,
+    val type: String? = ""
 )

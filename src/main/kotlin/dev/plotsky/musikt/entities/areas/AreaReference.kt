@@ -9,5 +9,6 @@ data class AreaReference(
     @Json(name = "sort-name")
     val sortName: String,
     @Json(name = "iso-3166-1-codes")
-    val iso31661codes: List<String> = emptyList()
+    val iso31661codes: List<String> = emptyList(),
+    val type: String? = ""
 )

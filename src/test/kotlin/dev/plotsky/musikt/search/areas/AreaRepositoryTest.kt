@@ -24,6 +24,16 @@ class AreaRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
 
     @Test
     @OkReplay
+    fun testGetByIdReturnsType() {
+        val repo = AreaRepository(request)
+        val area = repo.getById(
+            IdOptions("b21e4552-050d-4c0c-ac5a-031108eb0c47", listOf("area-rels"))
+        )!!
+        assertEquals("City", area.type)
+    }
+
+    @Test
+    @OkReplay
     fun testGetItemsWithRelationships() {
         val repo = AreaRepository(request)
         val options = IdOptions(
