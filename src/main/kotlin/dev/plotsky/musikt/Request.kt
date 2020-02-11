@@ -27,8 +27,3 @@ class Request(
             .build()
     }
 }
-
-fun buildRequest(config: Configuration): Request {
-    val client = OkHttpClient().newBuilder().build()
-    return Request(config, client)
-}
