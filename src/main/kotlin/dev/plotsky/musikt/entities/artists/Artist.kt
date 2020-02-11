@@ -14,12 +14,12 @@ data class Artist(
     val country: String?,
     val name: String,
     @Json(name = "type-id")
-    val typeId: String,
+    val typeId: String?,
     val gender: String?,
     @Json(name = "end_area")
     val endArea: AreaReference?,
     val isnis: List<String> = emptyList(),
-    val type: String?,
+    val type: String = "",
     @Json(name = "begin_area")
     val beginArea: AreaReference?,
     val disambiguation: String?,
