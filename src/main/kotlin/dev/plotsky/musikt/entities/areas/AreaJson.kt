@@ -5,7 +5,7 @@ import dev.plotsky.musikt.entities.LifeSpan
 
 data class AreaJson(
     val id: String,
-    val relations: List<Map<String, Any>> = emptyList(),
+    val relations: List<Map<String, Any?>> = emptyList(),
     val disambiguation: String = "",
     @Json(name = "sort-name")
     val sortName: String = "",

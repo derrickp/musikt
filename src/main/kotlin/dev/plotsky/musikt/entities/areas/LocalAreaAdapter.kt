@@ -8,7 +8,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 class LocalAreaAdapter {
     @ToJson
     fun toJson(area: Area): AreaJson {
-        val areaRelations: List<Map<String, Any>> = area.relatedAreas.map {
+        val areaRelations: List<Map<String, Any?>> = area.relatedAreas.map {
             mapOf(
                 "type" to it.type,
                 "target-type" to it.targetType,
@@ -53,7 +53,7 @@ class LocalAreaAdapter {
         )
     }
 
-    private fun buildRelatedArea(json: Map<String, Any>): RelatedArea? {
+    private fun buildRelatedArea(json: Map<String, Any?>): RelatedArea? {
         val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         val mapAdapter = moshi.adapter(Map::class.java)
         val serialized = mapAdapter.toJson(json)
