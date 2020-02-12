@@ -1,0 +1,23 @@
+!tape
+name: test failing json parse query
+interactions:
+- recorded: 2020-02-12T03:21:31.576Z
+  request:
+    method: GET
+    uri: https://musicbrainz.org/ws/2/artist/fc6679ba-b140-4e7a-a7c2-91dd9f0337c5?fmt=json&inc=area-rels
+    headers:
+      User-Agent: Musikt Derrick Plotsky https://github.com/derrickp/musikt
+  response:
+    status: 200
+    headers:
+      access-control-allow-origin: '*'
+      content-type: application/json; charset=utf-8
+      date: Wed, 12 Feb 2020 03:21:31 GMT
+      etag: W/"d3a2ecaccac4c2c6ce5bee9ba169fea3"
+      server: Plack::Handler::Starlet
+      vary: Accept-Encoding
+      x-cache-status: STALE
+      x-ratelimit-limit: '1200'
+      x-ratelimit-remaining: '801'
+      x-ratelimit-reset: '1581477691'
+    body: '{"begin-area":null,"type-id":null,"isnis":[],"end-area":null,"end_area":null,"relations":[],"gender":null,"name":"Flat Earth","sort-name":"Flat Earth","ipis":[],"area":null,"gender-id":null,"type":null,"disambiguation":"Finnish rock supergroup","life-span":{"end":null,"ended":false,"begin":null},"begin_area":null,"country":null,"id":"fc6679ba-b140-4e7a-a7c2-91dd9f0337c5"}'

@@ -102,4 +102,20 @@ class ArtistRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
         val artists = repo.getByQuery(query)
         assertEquals(1, artists.size)
     }
+
+    @Test
+    @OkReplay
+    fun testFailingJsonParseQuery() {
+        val options =
+            IdOptions(
+                id = "fc6679ba-b140-4e7a-a7c2-91dd9f0337c5",
+                relationships = listOf("area-rels")
+            )
+        val repo =
+            ArtistRepository(
+                request
+            )
+        val artist = repo.getById(options)
+        assertEquals("fc6679ba-b140-4e7a-a7c2-91dd9f0337c5", artist?.id)
+    }
 }
