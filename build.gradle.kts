@@ -4,6 +4,8 @@
  * This generated file contains a sample Kotlin library project to get you started.
  */
 
+import io.gitlab.arturbosch.detekt.extensions.DetektExtension
+
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.3.61"
@@ -11,6 +13,12 @@ plugins {
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
     `maven-publish`
+    id("io.gitlab.arturbosch.detekt").version("1.6.0")
+}
+
+detekt {
+    toolVersion = "1.6.0"
+    config = files("config/detekt/detekt.yml")
 }
 
 publishing {
