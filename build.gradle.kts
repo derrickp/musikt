@@ -4,8 +4,6 @@
  * This generated file contains a sample Kotlin library project to get you started.
  */
 
-import io.gitlab.arturbosch.detekt.extensions.DetektExtension
-
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.3.61"
