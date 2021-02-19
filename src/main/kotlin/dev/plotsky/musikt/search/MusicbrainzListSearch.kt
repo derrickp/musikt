@@ -11,7 +11,7 @@ class MusicbrainzListSearch<T>(
     private val klass: Class<T>,
     private val request: Request,
     private val adapters: List<Any> = emptyList()
-) : ListSearch<T> {
+) {
     private val moshi: Moshi? = null
 
     private fun getMoshi(): Moshi {
@@ -27,14 +27,14 @@ class MusicbrainzListSearch<T>(
         return builder.build()
     }
 
-    override fun byTerm(endpoint: String, term: String): T? {
+    fun byTerm(endpoint: String, term: String): T? {
         val parameters = termParameters(
             URLEncoder.encode(term, StandardCharsets.UTF_8)
         )
         return get(endpoint, parameters)
     }
 
-    override fun byQuery(endpoint: String, query: Query): T? {
+    fun byQuery(endpoint: String, query: Query): T? {
         val parameters = queryParameters(query.getEncodedQuery())
         return get(endpoint, parameters)
     }

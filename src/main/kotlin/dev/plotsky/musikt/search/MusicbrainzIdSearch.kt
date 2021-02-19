@@ -8,7 +8,7 @@ class MusicbrainzIdSearch<T>(
     private val klass: Class<T>,
     private val request: Request,
     private val adapters: List<Any> = emptyList()
-) : IdSearch<T> {
+) {
     private val moshi: Moshi? = null
 
     private fun getMoshi(): Moshi {
@@ -24,7 +24,7 @@ class MusicbrainzIdSearch<T>(
         return builder.build()
     }
 
-    override fun getItemById(
+    fun getItemById(
         endpoint: String,
         idOptions: IdOptions
     ): T? {
