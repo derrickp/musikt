@@ -1,8 +1,8 @@
 package dev.plotsky.musikt
 
 import okhttp3.OkHttpClient
-import okhttp3.Request as OkHttpRequest
 import okhttp3.Response
+import okhttp3.Request as OkHttpRequest
 
 class Request(
     private val config: Configuration,

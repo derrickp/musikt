@@ -1,9 +1,9 @@
 package dev.plotsky.musikt
 
-import kotlin.test.assertEquals
 import okreplay.OkReplay
 import okreplay.TapeMode
 import org.junit.Test
+import kotlin.test.assertEquals
 
 class RequestTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     @Test @OkReplay

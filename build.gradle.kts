@@ -12,6 +12,7 @@ plugins {
     `java-library`
     `maven-publish`
     id("io.gitlab.arturbosch.detekt").version("1.6.0")
+    id("org.jlleitschuh.gradle.ktlint").version("10.0.0")
 }
 
 detekt {
@@ -36,6 +37,7 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
+        maven("https://plugins.gradle.org/m2/")
     }
 }
 

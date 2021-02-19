@@ -3,9 +3,9 @@ package dev.plotsky.musikt.entities
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dev.plotsky.musikt.entities.recordings.RecordingList
+import org.junit.Test
 import java.io.File
 import kotlin.test.assertEquals
-import org.junit.Test
 
 class RecordingListTest {
     @Test

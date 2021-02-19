@@ -4,10 +4,10 @@ import dev.plotsky.musikt.ReplayTest
 import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.buildDefaultConfiguration
 import dev.plotsky.musikt.search.IdOptions
-import kotlin.test.assertEquals
 import okreplay.OkReplay
 import okreplay.TapeMode
 import org.junit.Test
+import kotlin.test.assertEquals
 
 class AreaRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     private val request = Request(buildDefaultConfiguration(), client)
@@ -27,7 +27,10 @@ class AreaRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     fun testGetByIdReturnsType() {
         val repo = AreaRepository(request)
         val area = repo.getById(
-            IdOptions("b21e4552-050d-4c0c-ac5a-031108eb0c47", listOf("area-rels"))
+            IdOptions(
+                "b21e4552-050d-4c0c-ac5a-031108eb0c47",
+                listOf("area-rels")
+            )
         )!!
         assertEquals("City", area.type)
     }

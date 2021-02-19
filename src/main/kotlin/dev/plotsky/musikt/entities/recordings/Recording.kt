@@ -12,5 +12,4 @@ data class Recording(
     @Json(name = "artist-credit")
     val artistCredit: List<ArtistCredit> = emptyList(),
     val releases: List<ReleaseReference> = emptyList()
-
 )

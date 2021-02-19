@@ -1,3 +1,5 @@
 root = true
 [*.{java,kt,kts,scala,rs,xml,kt.spec,kts.spec}]
-max_line_length = 80
+max_line_length=80
+indent_size=4
+insert_final_newline=true

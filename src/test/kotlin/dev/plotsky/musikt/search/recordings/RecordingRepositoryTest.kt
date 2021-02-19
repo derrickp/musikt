@@ -4,10 +4,10 @@ import dev.plotsky.musikt.ReplayTest
 import dev.plotsky.musikt.Request
 import dev.plotsky.musikt.buildDefaultConfiguration
 import dev.plotsky.musikt.search.IdOptions
-import kotlin.test.assertEquals
 import okreplay.OkReplay
 import okreplay.TapeMode
 import org.junit.Test
+import kotlin.test.assertEquals
 
 class RecordingRepositoryTest : ReplayTest(TapeMode.READ_ONLY_QUIET) {
     private val request = Request(buildDefaultConfiguration(), client)
